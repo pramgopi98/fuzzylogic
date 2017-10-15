@@ -14,3 +14,5 @@ AttributeError: 'module' object has no attribute 'ratoio'
 27
 >>> fuzz.partial_ratio("Today is a good day","Good day")
 88
+>>> fuzz.token_sort_ratio("Today is a good day","TODAY is a gOOD day")
+100
