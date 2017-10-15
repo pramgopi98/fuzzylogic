@@ -2,3 +2,15 @@
 C:\Python27\lib\site-packages\fuzzywuzzy\fuzz.py:35: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
   warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
 >>> from fuzzywuzzy import process
+>>> fuzz.ratio("This is a test line","this is a test line")
+95
+>>> fuzz.partial_ratio("FUZZY LOGIC","Fuzzy Logic")
+27
+>>> fuzz.ratoio("FUZZY LOGIC","Fuzzy Logic")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'module' object has no attribute 'ratoio'
+>>> fuzz.ratio("FUZZY LOGIC","Fuzzy Logic")
+27
+>>> fuzz.partial_ratio("Today is a good day","Good day")
+88
