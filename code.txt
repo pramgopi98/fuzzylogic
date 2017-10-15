@@ -30,3 +30,14 @@ AttributeError: 'module' object has no attribute 'ratoio'
 100
 >>>fuzz.token_sort_ratio("Fuzzy logic","LoGiC FuZzY")
 100
+>>> query = 'Fuzzy Logic'
+>>> choices = ['FUZZY LOGIC' , 'fuzzy logic','FuZzY LoGic','fuzzy LOGIC' , 'FUZZY logic']
+>>> process.ecxtract(query,choices)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'module' object has no attribute 'ecxtract'
+>>> process.extract(query,choices)
+[('FUZZY LOGIC', 100), ('fuzzy logic', 100), ('FuZzY LoGic', 100), ('fuzzy LOGIC', 100), ('FUZZY logic', 100)]
+>>> choices = ['FUZZY LOGIC' , 'fuzzy logic','FuZzY LoGic','fuzzy LOGIC' , 'FUZZY']
+>>> process.extract(query,choices)
+[('FUZZY LOGIC', 100), ('fuzzy logic', 100), ('FuZzY LoGic', 100), ('fuzzy LOGIC', 100), ('FUZZY', 90)]
