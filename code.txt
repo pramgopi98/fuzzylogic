@@ -18,3 +18,5 @@ AttributeError: 'module' object has no attribute 'ratoio'
 100
 >>> fuzz.token_set_ratio("Today is a good day","Is today a good day?")
 100
+>>>fuzz.ratio("This is a very basic implementation of fuzzy logic","THIS IS A BASIC IMPLEMENTATION OF FUZZY LOGIC")
+17
