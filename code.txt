@@ -24,3 +24,7 @@ AttributeError: 'module' object has no attribute 'ratoio'
 18
 >>> fuzz.partial_ratio("This is a very basic implementation of fuzzy logic","fuzzy logic")
 100
+>>> fuzz.ratio("Fuzzy logic","fUZZY LOGIC")
+9
+>>> fuzz.token_set_ratio("Fuzzy logic","fUZZY LOGIC")
+100
