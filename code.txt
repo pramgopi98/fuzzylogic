@@ -41,3 +41,6 @@ AttributeError: 'module' object has no attribute 'ecxtract'
 >>> choices = ['FUZZY LOGIC' , 'fuzzy logic','FuZzY LoGic','fuzzy LOGIC' , 'FUZZY']
 >>> process.extract(query,choices)
 [('FUZZY LOGIC', 100), ('fuzzy logic', 100), ('FuZzY LoGic', 100), ('fuzzy LOGIC', 100), ('FUZZY', 90)]
+ choices = ['FUZ' , 'f logc','FuZ LoG','LOGIC' , 'FUZZY']
+>>> process.extract(query,choices)
+[('FUZ', 90), ('LOGIC', 90), ('FUZZY', 90), ('FuZ LoG', 78), ('f logc', 75)]
