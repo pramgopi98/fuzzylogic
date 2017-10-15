@@ -20,3 +20,7 @@ AttributeError: 'module' object has no attribute 'ratoio'
 100
 >>>fuzz.ratio("This is a very basic implementation of fuzzy logic","THIS IS A BASIC IMPLEMENTATION OF FUZZY LOGIC")
 17
+>>> fuzz.ratio("This is a very basic implementation of fuzzy logic","THIS IS A VERY BASIC IMPLEMENTATION OF FUZZY LOGIC")
+18
+>>> fuzz.partial_ratio("This is a very basic implementation of fuzzy logic","fuzzy logic")
+100
