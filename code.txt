@@ -28,3 +28,5 @@ AttributeError: 'module' object has no attribute 'ratoio'
 9
 >>> fuzz.token_set_ratio("Fuzzy logic","fUZZY LOGIC")
 100
+>>>fuzz.token_sort_ratio("Fuzzy logic","LoGiC FuZzY")
+100
