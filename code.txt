@@ -1,0 +1,4 @@
+ >>>from fuzzywuzzy import fuzz
+C:\Python27\lib\site-packages\fuzzywuzzy\fuzz.py:35: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+>>> from fuzzywuzzy import process
